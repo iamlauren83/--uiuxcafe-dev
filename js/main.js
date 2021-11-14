@@ -12,10 +12,13 @@ function Btn(props) {
 }
 
 function Title() {
-    return e("div", { key: "title_div" }, [
+    return e("div", { key: "title_div", className: "title_div"  }, [
         e("div", { key: "shopname", className: "shopname" }, [
             e("div", {key: "shopname_lg", className: "shopname_lg"} ,"DutyFree"),
             e("div", {key: "shopname_sm", className: "shopname_sm"} , "采盟免稅購物網")
+        ]),
+        e("div", { key: "take_box", className: "take_box" }, [
+            e(Btn, { key: "take_place", content: "提貨點：第二航廈D區", className: "take_place", icon:"airplane-takeoff" }, null )
         ]),
         e("div", { key: "btn_box", className: "btn_box" }, [
             e(Btn, { key: "btn_collect", content: "我的收藏", className: "topbar", icon:"heart" }, null ),

@@ -5,9 +5,11 @@ body{
 
 .topbar{
     padding: 0px 32px;
-    height:200px;
+    height:221px;
     background-color:rgb(0, 0, 0);
-    /* overflow:hidden; */
+}
+.title_div{
+    height: 172px;
 }
 .shopname{
     width: 100%;
@@ -27,12 +29,17 @@ body{
     font-size: 22px;
     padding-left: 3px;
 }
+.take_box{
+    position: absolute;
+    right: 20px;
+    top: 56px;
+}
 .btn_box{
     position: absolute;
     right: 20px;
-    top: 66px;
+    top: 95px;
 }
-.topbar_font, .search_title{
+.topbar_font, .search_title, .take_place_font{
     display: inline-block;
     color: white;
     line-height: 30px;
@@ -53,11 +60,29 @@ body{
     width: 83px;
     text-align: center;
 }
+.take_place_btn{
+    display: inline-block;
+    line-height: 32px;
+    height: 30px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 0px 7px;
+    border-radius: 4px;
+    margin-left: 8px;
+    width: 266px;
+    text-align: left;
+}
 .heart{
     display: inline-block;
     width:16px;
     height:16px;
     content:url(images/heart.png);
+}
+.airplane-takeoff{
+    display: inline-block;
+    width:16px;
+    height:16px;
+    content:url(images/airplane-takeoff.png);
 }
 .cart-outline{
     display: inline-block;
@@ -82,7 +107,7 @@ body{
     box-shadow: 0px 1px white;
     position: absolute;
     right: 20px;
-    top: 106px;
+    top: 132px;
     width: 263px;
 }
 .title{
